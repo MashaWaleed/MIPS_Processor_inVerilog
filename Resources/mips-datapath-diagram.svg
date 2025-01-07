@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- PC -->
+  <rect x="50" y="150" width="80" height="40" fill="#4a90e2" rx="5"/>
+  <text x="90" y="175" text-anchor="middle" fill="white" font-family="Arial">PC</text>
+  
+  <!-- Instruction Memory -->
+  <rect x="180" y="130" width="100" height="80" fill="#50c878" rx="5"/>
+  <text x="230" y="175" text-anchor="middle" fill="white" font-family="Arial">Instruction&#10;Memory</text>
+  
+  <!-- Register File -->
+  <rect x="330" y="120" width="100" height="100" fill="#f39c12" rx="5"/>
+  <text x="380" y="175" text-anchor="middle" fill="white" font-family="Arial">Register&#10;File</text>
+  
+  <!-- ALU -->
+  <path d="M 480,120 L 580,120 L 530,220 Z" fill="#e74c3c"/>
+  <text x="530" y="175" text-anchor="middle" fill="white" font-family="Arial">ALU</text>
+  
+  <!-- Data Memory -->
+  <rect x="600" y="130" width="100" height="80" fill="#8e44ad" rx="5"/>
+  <text x="650" y="175" text-anchor="middle" fill="white" font-family="Arial">Data&#10;Memory</text>
+  
+  <!-- Control Unit -->
+  <rect x="330" y="40" width="140" height="50" fill="#2c3e50" rx="5"/>
+  <text x="400" y="70" text-anchor="middle" fill="white" font-family="Arial">Control Unit</text>
+  
+  <!-- Connections -->
+  <path d="M 130,170 L 180,170" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M 280,170 L 330,170" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M 430,170 L 480,170" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M 580,170 L 600,170" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M 400,90 L 400,120" stroke="#666" stroke-width="2" fill="none"/>
+  
+  <!-- Control Lines -->
+  <path d="M 400,90 C 450,90 500,90 530,120" stroke="#666" stroke-width="1" stroke-dasharray="4,4" fill="none"/>
+  <path d="M 400,90 C 550,90 600,90 650,130" stroke="#666" stroke-width="1" stroke-dasharray="4,4" fill="none"/>
+</svg>

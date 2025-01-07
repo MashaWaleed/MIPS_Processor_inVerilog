@@ -5,6 +5,7 @@ A fully functional MIPS processor implementation in Verilog HDL, featuring a 5-s
 ## 🎯 Features
 
 - **Complete MIPS Architecture Implementation**
+
   - 32-bit datapath
   - Harvard architecture (separate instruction and data memory)
   - 5-stage pipeline
@@ -22,27 +23,31 @@ A fully functional MIPS processor implementation in Verilog HDL, featuring a 5-s
 
 The processor implements a classic MIPS architecture with the following key components:
 
-![MIPS Processor Datapath](mips-datapath-diagram)
+![](mips-datapath-diagram)
 
 ### Core Components
 
 1. **Program Counter (PC)**
+
    - 32-bit counter
    - Increments by 4 each cycle
    - Supports branch operations
 
 2. **Instruction Memory**
+
    - 256 x 32-bit memory
    - Read-only during execution
    - Contains program instructions
 
 3. **Register File**
+
    - 32 x 32-bit registers
    - Dual read ports
    - Single write port
    - Zero register ($0) hardwired to 0
 
 4. **ALU (Arithmetic Logic Unit)**
+
    - Supports operations:
      - AND, OR (Logical)
      - ADD, SUB (Arithmetic)
@@ -50,6 +55,7 @@ The processor implements a classic MIPS architecture with the following key comp
    - Generates zero flag for branch operations
 
 5. **Data Memory**
+
    - 256 x 32-bit memory
    - Supports word-aligned access
    - Read/Write capability
@@ -84,12 +90,14 @@ The processor is implemented in a modular fashion with the following key compone
 ## 🧪 Testing
 
 The implementation includes a comprehensive testbench (`mips_processor_tb`) that:
+
 - Initializes the processor
 - Executes a test program
 - Monitors key signals and memory contents
 - Generates VCD file for waveform analysis
 
 ### Sample Test Program
+
 ```
 memory[0] = 32'h00221820;  // ADD $3, $1, $2
 memory[1] = 32'h00612022;  // SUB $4, $3, $1
@@ -101,15 +109,18 @@ memory[4] = 32'h10850004;  // BEQ $4, $5, 4
 ## 🚀 Getting Started
 
 1. **Prerequisites**
+
    - Verilog HDL simulator (e.g., Icarus Verilog)
    - Waveform viewer (e.g., GTKWave)
 
 2. **Compilation**
+
    ```bash
    iverilog -o mips_processor mips_processor.v
    ```
 
 3. **Simulation**
+
    ```bash
    vvp mips_processor
    ```
@@ -122,6 +133,7 @@ memory[4] = 32'h10850004;  // BEQ $4, $5, 4
 ## 📈 Performance Monitoring
 
 The testbench includes comprehensive monitoring of:
+
 - Program Counter
 - Current Instruction
 - ALU Results
@@ -131,6 +143,7 @@ The testbench includes comprehensive monitoring of:
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Report bugs
 - Suggest enhancements
 - Add new features
