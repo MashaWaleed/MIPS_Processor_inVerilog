@@ -23,7 +23,7 @@ A fully functional MIPS processor implementation in Verilog HDL, featuring a 5-s
 
 The processor implements a classic MIPS architecture with the following key components:
 
-![](mips-datapath-diagram)
+![https://raw.githubusercontent.com/MashaWaleed/MIPS_Processor_inVerilog/24c1f1b5b9f790c4eebb4847f3865ab617b17e67/Resources/mips-datapath-diagram.svg](mips-datapath-diagram)
 
 ### Core Components
 
